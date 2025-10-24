@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sistem Pakar untuk Mendiagnosa Penyakit Ginjal</title>
+    <style>
+      body { 
+        font-family: Arial, sans-serif; 
+        background-color: #f0f8ff; 
+        display: flex; 
+        justify-content: center; 
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 12px #007BFF;
+        
+        /* === PERUBAHAN DI SINI === */
+        width: 750px; /* Dibuat lebih lebar (sebelumnya 600px) */
+      }
+      h1 { 
+        color: #0056b3; 
+        text-align: center;
+      }
+      .authors {
+        text-align: center;
+        font-size: 1.1em;
+        color: #555;
+        margin-top: -10px;
+        margin-bottom: 25px;
+      }
+      .symptom { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px; 
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+      }
+      .symptom-label {
+        display: flex;
+        align-items: center;
+      }
+      label { 
+        font-weight: bold; 
+        color: #333;
+        margin-left: 5px;
+      }
+      .confidence-select { 
+        padding: 4px 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 0.9em;
+        width: 170px;
+      }
+      .btn { 
+        background-color: #007BFF; 
+        color: white; 
+        border: none; 
+        padding: 10px 20px; 
+        font-size: 16px; 
+        border-radius: 5px; 
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      .btn:hover { 
+        background-color: #0056b3; 
+      }
+      input[type="checkbox"]:hover {
+        cursor: pointer; 
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.7);
+      }
+      label:hover {
+        cursor: pointer;
+        color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SISTEM PAKAR UNTUK MENDIAGNOSA PENYAKIT GINJAL</h1>
+      <p class="authors">Talha Fatur Rahman - Ripan</p>
+      
+      <p>Centang gejala yang Anda rasakan, lalu pilih tingkat keyakinan yang sesuai. Hanya gejala yang dicentang yang akan diproses.</p>
+      
+      <form method="post" action="/diagnose">
+        {% for s in symptoms %}
+          <div class="symptom">
+            <div class="symptom-label">
+              <input type="checkbox" id="sym_{{ loop.index0 }}" name="sym_{{ loop.index0 }}" value="on">
+              <label for="sym_{{ loop.index0 }}">{{ s.capitalize() }}</label>
+            </div>
+            
+            <select class="confidence-select" id="conf_sym_{{ loop.index0 }}" name="conf_sym_{{ loop.index0 }}" disabled>
+                <option value="1">Ya (1.0)</option>
+                <option value="0.75">Sangat Mungkin (0.75)</option>
+                <option value="0.5" selected>Mungkin (0.5)</option>
+                <option value="0.25">Agak Mungkin (0.25)</option>
+            </select>
+          </div>
+        {% endfor %}
+        <button class="btn" type="submit">Proses Diagnosa</button>
+      </form>
+    </div>
+
+    <script>
+      const n = 42; 
+      
+      for (let i=0; i < n; i++) {
+        const checkbox = document.getElementById('sym_' + i);
+        const select = document.getElementById('conf_sym_' + i); 
+
+        if (checkbox && select) {
+            select.disabled = !checkbox.checked; 
+            checkbox.addEventListener('change', function() {
+              select.disabled = !this.checked; 
+            });
+        }
+      }
+    </script>
+  </body>
+</html>
