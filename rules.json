@@ -1,0 +1,512 @@
+[
+  {
+    "id": "R1",
+    "then": "Gagal Ginjal Akut",
+    "premises": [
+      {
+        "symptom": "berkurangnya rasa terutama di tangan",
+        "mb": 0.8,
+        "md": 0.5
+      },
+      {
+        "symptom": "darah di dalam air kencing (hematuria)",
+        "mb": 0.6,
+        "md": 0.2
+      },
+      {
+        "symptom": "demam",
+        "mb": 0.7,
+        "md": 0.4
+      },
+      {
+        "symptom": "kejang",
+        "mb": 0.3,
+        "md": 0.0
+      },
+      {
+        "symptom": "kencing di malam hari (nokturia)",
+        "mb": 0.6,
+        "md": 0.2
+      },
+      {
+        "symptom": "mual",
+        "mb": 0.4,
+        "md": 0.1
+      },
+      {
+        "symptom": "mudah lelah",
+        "mb": 0.8,
+        "md": 0.2
+      },
+      {
+        "symptom": "muntah",
+        "mb": 0.6,
+        "md": 0.4
+      },
+      {
+        "symptom": "pembengkakan yang menyeluruh",
+        "mb": 0.9,
+        "md": 0.1
+      },
+      {
+        "symptom": "perubahan mental / suasana hati",
+        "mb": 0.4,
+        "md": 0.2
+      },
+      {
+        "symptom": "ruam kulit / kulit kemerahan",
+        "mb": 0.4,
+        "md": 0.2
+      },
+      {
+        "symptom": "syok / kaget",
+        "mb": 0.7,
+        "md": 0.2
+      },
+      {
+        "symptom": "tremor tangan",
+        "mb": 0.8,
+        "md": 0.3
+      },
+      {
+        "symptom": "volume air kencing berkurang",
+        "mb": 0.6,
+        "md": 0.2
+      }
+    ]
+  },
+  {
+    "id": "R2",
+    "then": "Kanker Ginjal",
+    "premises": [
+      {
+        "symptom": "darah di dalam air kencing (hematuria)",
+        "mb": 0.9,
+        "md": 0.2
+      },
+      {
+        "symptom": "demam",
+        "mb": 0.4,
+        "md": 0.1
+      },
+      {
+        "symptom": "mudah lelah",
+        "mb": 0.8,
+        "md": 0.3
+      },
+      {
+        "symptom": "nyeri di daerah kandung kemih",
+        "mb": 0.6,
+        "md": 0.1
+      },
+      {
+        "symptom": "penurunan berat badan",
+        "mb": 0.9,
+        "md": 0.3
+      },
+      {
+        "symptom": "sering kencing",
+        "mb": 0.7,
+        "md": 0.2
+      },
+      {
+        "symptom": "tekanan darah tinggi / hipertensi",
+        "mb": 0.8,
+        "md": 0.2
+      },
+      {
+        "symptom": "nyeri di daerah pinggang dan mengeras dalam perabaan",
+        "mb": 0.8,
+        "md": 0.2
+      }
+    ]
+  },
+  {
+    "id": "R3",
+    "then": "Pielonefritis",
+    "premises": [
+      {
+        "symptom": "demam",
+        "mb": 0.8,
+        "md": 0.5
+      },
+      {
+        "symptom": "menggigil",
+        "mb": 0.7,
+        "md": 0.5
+      },
+      {
+        "symptom": "mual",
+        "mb": 0.7,
+        "md": 0.5
+      },
+      {
+        "symptom": "muntah",
+        "mb": 0.7,
+        "md": 0.4
+      },
+      {
+        "symptom": "nyeri di daerah ginjal",
+        "mb": 0.9,
+        "md": 0.1
+      },
+      {
+        "symptom": "nyeri ketika kencing (disuria)",
+        "mb": 0.8,
+        "md": 0.1
+      },
+      {
+        "symptom": "nyeri perut",
+        "mb": 0.3,
+        "md": 0.0
+      },
+      {
+        "symptom": "nyeri punggung bagian bawah",
+        "mb": 0.8,
+        "md": 0.2
+      },
+      {
+        "symptom": "sering kencing",
+        "mb": 0.8,
+        "md": 0.3
+      }
+    ]
+  },
+  {
+    "id": "R4",
+    "then": "Sindroma Nefrotik",
+    "premises": [
+      {
+        "symptom": "darah di dalam air kencing (hematuria)",
+        "mb": 0.5,
+        "md": 0.1
+      },
+      {
+        "symptom": "nafsu makan menurun",
+        "mb": 0.6,
+        "md": 0.4
+      },
+      {
+        "symptom": "nyeri ketika kencing (disuria)",
+        "mb": 0.6,
+        "md": 0.1
+      },
+      {
+        "symptom": "nyeri perut",
+        "mb": 0.4,
+        "md": 0.0
+      },
+      {
+        "symptom": "nyeri punggung bagian bawah",
+        "mb": 0.3,
+        "md": 0.0
+      },
+      {
+        "symptom": "pembengkakan organ tubuh tertentu",
+        "mb": 0.9,
+        "md": 0.1
+      },
+      {
+        "symptom": "rambut dan kuku menjadi rapuh",
+        "mb": 0.3,
+        "md": 0.0
+      },
+      {
+        "symptom": "tekanan darah tinggi / hipertensi",
+        "mb": 0.9,
+        "md": 0.1
+      },
+      {
+        "symptom": "volume air kencing berkurang",
+        "mb": 0.9,
+        "md": 0.1
+      }
+    ]
+  },
+  {
+    "id": "R5",
+    "then": "Hidronefrosis",
+    "premises": [
+      {
+        "symptom": "darah di dalam air kencing (hematuria)",
+        "mb": 0.4,
+        "md": 0.1
+      },
+      {
+        "symptom": "demam",
+        "mb": 0.4,
+        "md": 0.1
+      },
+      {
+        "symptom": "mual",
+        "mb": 0.7,
+        "md": 0.4
+      },
+      {
+        "symptom": "muntah",
+        "mb": 0.7,
+        "md": 0.5
+      },
+      {
+        "symptom": "nanah di air kencing",
+        "mb": 0.3,
+        "md": 0.1
+      },
+      {
+        "symptom": "nyeri di tulang pinggul",
+        "mb": 0.8,
+        "md": 0.2
+      },
+      {
+        "symptom": "nyeri di daerah kandung kemih",
+        "mb": 0.3,
+        "md": 0.0
+      },
+      {
+        "symptom": "nyeri perut",
+        "mb": 0.4,
+        "md": 0.0
+      },
+      {
+        "symptom": "nyeri yang hilang timbul",
+        "mb": 0.9,
+        "md": 0.1
+      },
+      {
+        "symptom": "teraba benjolan besar di daerah ginjal",
+        "mb": 0.7,
+        "md": 0.2
+      }
+    ]
+  },
+  {
+    "id": "R6",
+    "then": "Kanker Kandung Kemih",
+    "premises": [
+      {
+        "symptom": "darah di dalam air kencing (hematuria)",
+        "mb": 0.8,
+        "md": 0.3
+      },
+      {
+        "symptom": "demam",
+        "mb": 0.5,
+        "md": 0.2
+      },
+      {
+        "symptom": "desakan untuk kencing",
+        "mb": 0.9,
+        "md": 0.0
+      },
+      {
+        "symptom": "nyeri ketika kencing (disuria)",
+        "mb": 0.6,
+        "md": 0.1
+      },
+      {
+        "symptom": "nyeri di daerah kandung kemih",
+        "mb": 0.9,
+        "md": 0.2
+      },
+      {
+        "symptom": "teraba keras di area kandung kemih",
+        "mb": 0.8,
+        "md": 0.4
+      }
+    ]
+  },
+  {
+    "id": "R7",
+    "then": "Ginjal Polikista",
+    "premises": [
+      {
+        "symptom": "darah di dalam air kencing (hematuria)",
+        "mb": 0.7,
+        "md": 0.3
+      },
+      {
+        "symptom": "mual",
+        "mb": 0.6,
+        "md": 0.5
+      },
+      {
+        "symptom": "mudah lelah",
+        "mb": 0.7,
+        "md": 0.1
+      },
+      {
+        "symptom": "nyeri di daerah ginjal",
+        "mb": 0.8,
+        "md": 0.3
+      },
+      {
+        "symptom": "nyeri punggung bagian bawah",
+        "mb": 0.7,
+        "md": 0.1
+      },
+      {
+        "symptom": "tekanan darah tinggi (hipertensi)",
+        "mb": 0.8,
+        "md": 0.3
+      },
+      {
+        "symptom": "volume air kencing berkurang",
+        "mb": 0.7,
+        "md": 0.4
+      }
+    ]
+  },
+  {
+    "id": "R8",
+    "then": "Nefritis Tubulointerstisial",
+    "premises": [
+      {
+        "symptom": "darah di dalam air kencing (hematuria)",
+        "mb": 0.8,
+        "md": 0.3
+      },
+      {
+        "symptom": "demam",
+        "mb": 0.4,
+        "md": 0.1
+      },
+      {
+        "symptom": "desakan untuk kencing",
+        "mb": 0.7,
+        "md": 0.4
+      },
+      {
+        "symptom": "menggigil",
+        "mb": 0.6,
+        "md": 0.1
+      },
+      {
+        "symptom": "mual",
+        "mb": 0.6,
+        "md": 0.5
+      },
+      {
+        "symptom": "muntah",
+        "mb": 0.6,
+        "md": 0.1
+      },
+      {
+        "symptom": "nyeri ketika kencing (disuria)",
+        "mb": 0.6,
+        "md": 0.1
+      },
+      {
+        "symptom": "nyeri punggung bagian bawah",
+        "mb": 0.6,
+        "md": 0.2
+      },
+      {
+        "symptom": "sering kencing",
+        "mb": 0.8,
+        "md": 0.1
+      }
+    ]
+  },
+  {
+    "id": "R9",
+    "then": "Sistitis",
+    "premises": [
+      {
+        "symptom": "darah di dalam air kencing (hematuria)",
+        "mb": 0.7,
+        "md": 0.4
+      },
+      {
+        "symptom": "demam",
+        "mb": 0.8,
+        "md": 0.2
+      },
+      {
+        "symptom": "desakan untuk kencing",
+        "mb": 0.8,
+        "md": 0.3
+      },
+      {
+        "symptom": "kencing di malam hari (nokturia)",
+        "mb": 0.8,
+        "md": 0.3
+      },
+      {
+        "symptom": "nyeri ketika kencing (disuria)",
+        "mb": 0.9,
+        "md": 0.2
+      },
+      {
+        "symptom": "nyeri punggung bagian bawah",
+        "mb": 0.6,
+        "md": 0.2
+      },
+      {
+        "symptom": "sering kencing",
+        "mb": 0.7,
+        "md": 0.4
+      }
+    ]
+  },
+  {
+    "id": "R10",
+    "then": "Infeksi Saluran Kemih",
+    "premises": [
+      {
+        "symptom": "nanah di air kencing",
+        "mb": 0.6,
+        "md": 0.1
+      },
+      {
+        "symptom": "nyeri di tulang pinggul",
+        "mb": 0.4,
+        "md": 0.0
+      },
+      {
+        "symptom": "nyeri ketika kencing (disuria)",
+        "mb": 0.7,
+        "md": 0.4
+      },
+      {
+        "symptom": "ruam kulit / kulit kemerahan",
+        "mb": 0.6,
+        "md": 0.1
+      },
+      {
+        "symptom": "volume air kencing berkurang",
+        "mb": 0.7,
+        "md": 0.4
+      },
+      {
+        "symptom": "demam",
+        "mb": 0.5,
+        "md": 0.3
+      },
+      {
+        "symptom": "menggigil",
+        "mb": 0.6,
+        "md": 0.2
+      },
+      {
+        "symptom": "mual",
+        "mb": 0.7,
+        "md": 0.4
+      },
+      {
+        "symptom": "muntah",
+        "mb": 0.7,
+        "md": 0.3
+      },
+      {
+        "symptom": "air seni berbau",
+        "mb": 0.7,
+        "md": 0.1
+      },
+      {
+        "symptom": "air seni kental/pekat",
+        "mb": 0.8,
+        "md": 0.1
+      }
+    ]
+  }
+]
